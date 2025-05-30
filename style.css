@@ -1,77 +1,82 @@
-body{
+h1:first-child{
+    background-color: burlywood;
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+h1:first-child:hover{
+    border: 3px solid gold;
+        text-transform: uppercase;
+
+}
+ul li:first-child:hover{
+        border-top: 2px solid black;
+
     color: white;
-}
-.warning{
-    font-weight: bold;
-    color: red;
-}
-
-h1[class='elf-speech']{
-    background-color: green;
-    color:white;
-}
-h1[class=dwarf-speech]{
-    background-color: brown;
-    color:white;
-}
-h1[class~="boromir"]{
-    background-color: orange;
-    color: white;
-}
-*[class*="ir"]{
-    border: 2px solid black; 
-}
-*[class^='elf']{
-    font-style: italic;
-}
-*[class$="mir"]{
-    font-style: oblique;
-
-}
-*[class|="dwarf"]{
-    font-weight: bold;
-    border: 2px dotted black;
-}
-h1[class='galadriel'i]{
-    font-family: fantasy;
-    font-style: italic;
-    font-weight: bold;
-    border: 2px solid gold;
-    background: green;
-    color:white
-}
-
-.gandalf p > em{
-    font-style: oblique;
-    font-weight: bold;
-    
-
-}
-.gandalf h3 + p{
-    border-bottom: 2px solid black;
-}
-
-.gandalf h3 + p ~ p{
-    border-bottom: 2px solid black;
-}
-.gandalf>p:hover{
     background-color: black;
+        text-transform: uppercase;
+
 }
-:root{
-    border: 10px dotted gray;
+
+ul li:last-child{
+    border-bottom: 2px solid black;
+
 }
-p:empty{
-    display: none;
+ul li:last-child:hover{
+    background: goldenrod;
+    color:white;
+    display: inline-block;
+    transform: scale(2);
 }
-em:only-child:hover{
-    color: gold;
+
+#student-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
 }
-p strong:only-child:hover{
-    color:red
+#student-table th,
+#student-table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
 }
-.golumn .chorus em:only-of-type:hover {
-    display: inline-block; /* to make transform reliable */
-    color: blue;
-    transform: scale(2.5);
-    transition: transform 0.3s ease; /* optional for smooth effect */
+#student-table tbody tr:nth-child(2n) {
+    background-color: #f9f9f9; /* Even rows get light tone for zebra striping */
+}
+
+#student-table tbody tr {
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+#student-table tbody tr:hover {
+    background-color: #ffe066; /* Highlight row on hover */
+    cursor: pointer;
+    transform: scale(1.005);
+}
+
+
+.chessboard {
+  border-collapse: collapse;
+  margin: 40px auto;
+}
+
+.chessboard td {
+  width: 60px;
+  height: 60px;
+}
+
+/* Color odd rows */
+.chessboard tr:nth-child(odd) td:nth-child(even) {
+  background-color: #000;
+}
+.chessboard tr:nth-child(odd) td:nth-child(odd) {
+  background-color: #fff;
+}
+
+/* Color even rows */
+.chessboard tr:nth-child(even) td:nth-child(odd) {
+  background-color: #000;
+}
+.chessboard tr:nth-child(even) td:nth-child(even) {
+  background-color: #fff;
 }
