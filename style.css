@@ -1,0 +1,77 @@
+body{
+    color: white;
+}
+.warning{
+    font-weight: bold;
+    color: red;
+}
+
+h1[class='elf-speech']{
+    background-color: green;
+    color:white;
+}
+h1[class=dwarf-speech]{
+    background-color: brown;
+    color:white;
+}
+h1[class~="boromir"]{
+    background-color: orange;
+    color: white;
+}
+*[class*="ir"]{
+    border: 2px solid black; 
+}
+*[class^='elf']{
+    font-style: italic;
+}
+*[class$="mir"]{
+    font-style: oblique;
+
+}
+*[class|="dwarf"]{
+    font-weight: bold;
+    border: 2px dotted black;
+}
+h1[class='galadriel'i]{
+    font-family: fantasy;
+    font-style: italic;
+    font-weight: bold;
+    border: 2px solid gold;
+    background: green;
+    color:white
+}
+
+.gandalf p > em{
+    font-style: oblique;
+    font-weight: bold;
+    
+
+}
+.gandalf h3 + p{
+    border-bottom: 2px solid black;
+}
+
+.gandalf h3 + p ~ p{
+    border-bottom: 2px solid black;
+}
+.gandalf>p:hover{
+    background-color: black;
+}
+:root{
+    border: 10px dotted gray;
+}
+p:empty{
+    display: none;
+}
+em:only-child:hover{
+    color: gold;
+}
+p strong:only-child:hover{
+    color:red
+}
+.golumn .chorus em:only-of-type:hover {
+    display: inline-block; /* to make transform reliable */
+    color: blue;
+    transform: scale(2.5);
+    transition: transform 0.3s ease; /* optional for smooth effect */
+}

@@ -4,3 +4,8 @@ h1{
     font-weight: bold;
 
 }
+.gandalf{
+    background-color: white;
+    border: 2px solid black;
+    color: gray;
+}
