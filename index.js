@@ -15,7 +15,7 @@ const students = [
   { name: 'Nate', age: 21, sex: 'M', score: 80 },
   { name: 'Olivia', age: 22, sex: 'F', score: 87 }
 ];
-const studentTable = document.getElementById('student-data');
+const studentTable = document.querySelector('#student-table #student-data');
 for (let student of students){
     const row= document.createElement('tr');
     const nameCell =document.createElement('td')

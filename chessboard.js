@@ -1,4 +1,4 @@
-const board = document.getElementById('board');
+const board = document.querySelector('table.board');
 const alphabets = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
 const reversedAlphabets = [...alphabets].reverse();
 
