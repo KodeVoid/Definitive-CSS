@@ -1,9 +1,9 @@
-/* h1:first-child{
+h1:first-child{
     background-color: burlywood;
     color: gray;
     font-family: 'Courier New', Courier, monospace;
 
-} */
+}
 h1:first-child:hover{
     border: 3px solid gold;
         text-transform: uppercase;
@@ -33,6 +33,7 @@ ul li:last-child:hover{
     width: 100%;
     border-collapse: collapse;
     margin-top: 2rem;
+    display: none;
 }
 #student-table th,
 #student-table td {
@@ -81,3 +82,76 @@ background: yellow url(target.png)
     background-color: #ddd;
     color:gray;
  }
+ .section{
+        transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+
+ }
+ .section:hover{
+    transform: scale(1.02);
+
+ }
+ .section p:first-of-type:active{
+    color: red;
+    transform: scale(1.02);
+ }
+ .section > form input:first-child{
+    width: 75%;
+    border: 2px solid black;
+ }
+ .section > form input:first-child:focus{
+    border: 2px solid blue;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+ }
+ .section >form:focus-within{
+    border: 2px solid yellow;
+ }
+ .section > form >input[type='button' i]{
+    background-color: blue;
+    color: white;
+    
+ }
+  .section > form >input[type='button' i]:focus-visible{
+    background-color: gold;
+    color: white;
+    
+ }
+ .section>form>input{
+    display: block;
+ }
+
+ input:disabled{
+    color: gray;
+    background-color: blanchedalmond;
+ }
+ input:valid{
+    background-color: green;
+    color: white;
+    transform: scale(1.02);
+ }
+ input:invalid{
+    background-color: red;
+    color: white;
+ }
+ input:required{
+    border-bottom: 4px solid blue;
+ }
+
+input[type='checkbox'] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+input[type='checkbox']:checked {
+  background-color: green;
+  transform: scale(1.1);
+  border-color: green;
+}
+
